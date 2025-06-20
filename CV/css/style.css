@@ -80,7 +80,52 @@ body {
     transform: translateY(0);
   }
 }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.2rem 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8); /* nền đen mờ */
+  backdrop-filter: blur(6px); /* hiệu ứng mờ nền đẹp */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* bóng đổ đậm hơn, sang hơn */
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
 
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #00ffcc;
+}
+
+/* THÊM PHẦN NÀY: navbar */
+.navbar {
+  display: flex;
+  gap: 3vw; /* Khoảng cách giữa các mục navbar */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-family: "Anton", sans-serif;
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  transition: border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid #00ffcc;
+}
 .about_section {
   position: relative;
   width: 100vw;
@@ -127,37 +172,6 @@ body {
   align-items: center;
   gap: 5vh;
   padding: 0 2vw;
-}
-
-.about_nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-  display: flex;
-  gap: 2vw;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 1.5vh 2vw;
-  font-family: "Anton", sans-serif;
-  font-size: 1.2vw;
-  text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0.9); /* Làm nền mờ để dễ nhìn */
-  backdrop-filter: blur(6px); /* Hiệu ứng làm mờ nền phía sau */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.about_nav a {
-  color: white;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 0.5vh;
-  transition: 0.3s;
-}
-
-.about_nav a:hover {
-  border-bottom: 2px solid white;
 }
 
 html {
@@ -257,6 +271,37 @@ html {
 .language ul li,
 .skills ul li {
   margin-bottom: 1vh;
+}
+.skill_item {
+  margin-bottom: 2vh;
+}
+
+.skill_item span {
+  display: block;
+  font-size: 1.2vw;
+  margin-bottom: 0.5vh;
+  font-weight: 500;
+}
+
+.skill_bar {
+  width: 100%;
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 2.5vh;
+}
+
+.skill_fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  text-align: right;
+  padding-right: 1vw;
+  font-size: 1vw;
+  font-weight: bold;
+  color: white;
+  line-height: 2.5vh;
+  border-radius: 10px 0 0 10px;
+  transition: width 1s ease-in-out;
 }
 
 .projects_content {
