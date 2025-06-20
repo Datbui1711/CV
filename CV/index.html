@@ -15,26 +15,34 @@
         </div>
       </div>
     </div>
+    <header>
+      <a href="#" class="logo">Bùi<span>Thành Đạt</span></a>
 
+      <nav class="navbar">
+        <a href="#home">Trang chủ</a>
+        <a href="#about_me">Thông tin</a>
+        <a href="#career_goals">Mục tiêu</a>
+        <a href="#interests">Sở thích</a>
+        <a href="#skills">Kỹ năng</a>
+        <a href="#projects">Dự án</a>
+        <a href="#certificates">Chứng chỉ và giải thưởng</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
     <div class="about_section">
       <div class="about_content">
-        <div class="about_nav">
-          <!-- Điều hướng đến các phần khác nhau của trang -->
-          <a href="#about_me">Thông tin cá nhân</a>
-          <a href="#career_goals">Mục tiêu nghề nghiệp</a>
-          <a href="#interests">Sở thích</a>
-          <a href="#language">Ngôn Ngữ</a>
-          <a href="#skills">Kĩ năng</a>
-          <a href="#projects">Dự án</a>
-          <a href="#certificates">Chứng chỉ và giải thưởng</a>
-          <a href="#contact">Liên hệ</a>
-        </div>
-
         <div class="about_text" id="about_me">
           <h3>Thông tin cá nhân</h3>
           <div class="about_me_row">
             <div class="about_me_image">
-              <img src="/assets/img/img.jpg" alt="My Photo" />
+              <img
+                src="/assets/img/img.jpg"
+                alt="My Photo"
+              />
               <!-- Hình ảnh cá nhân -->
             </div>
             <div class="about_me_content">
@@ -66,7 +74,7 @@
           <h3>Sở thích</h3>
           <p>
             Ngoài việc lập trình, tôi thích nghệ thuật số, khám phá các xu hướng
-            thiết kế mới, giúp tôi cân bằng logic với sự sáng tạo trong công
+            thiết kế mới, tôi còn chới đá bóng, cầu lông giúp tôi cân bằng logic, sự sáng tạo với sức khoẻ trong công
             việc.
           </p>
         </div>
@@ -81,11 +89,27 @@
 
         <div class="skills" id="skills">
           <h3>Kĩ năng</h3>
-          <ul>
-            <li>Html, Css</li>
-            <li>ReactJS / NextJS</li>
-            <li>Git, GitHub</li>
-          </ul>
+
+          <div class="skill_item">
+            <span>HTML & CSS</span>
+            <div class="skill_bar">
+              <div class="skill_fill" style="width: 50%">50%</div>
+            </div>
+          </div>
+
+          <div class="skill_item">
+            <span>ReactJS / NextJS</span>
+            <div class="skill_bar">
+              <div class="skill_fill" style="width: 65%">65%</div>
+            </div>
+          </div>
+
+          <div class="skill_item">
+            <span>Git & GitHub</span>
+            <div class="skill_bar">
+              <div class="skill_fill" style="width: 60%">60%</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
